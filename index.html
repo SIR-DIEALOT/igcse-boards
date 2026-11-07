@@ -1,0 +1,312 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>IGCSE Boards · Revision tracker for Cambridge IGCSE</title><meta name="description" content="Free IGCSE revision tracker: past papers, topic confidence, mock exams, flashcards and a smart study plan. Your data stays on your device."><meta name="theme-color" content="#0a84ff"><link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon-192.png"><link rel="apple-touch-icon" href="apple-touch-icon.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta property="og:title" content="IGCSE Boards"><meta property="og:description" content="Past papers, topics, mock exams, flashcards and a smart study plan for Cambridge IGCSE.">
+<style>
+:root{--bg:#f2f2f7;--fg:#1d1d1f;--mu:#86868b;--ln:#e5e5ea;--cd:#fff;--bl:#0a84ff;--bt:rgba(10,132,255,.12);--gl:rgba(250,250,252,.72);--sh:0 1px 2px rgba(0,0,0,.04),0 8px 24px rgba(0,0,0,.04);color-scheme:light dark}
+@media(prefers-color-scheme:dark){:root{--bg:#000;--fg:#f5f5f7;--mu:#98989d;--ln:#2c2c2e;--cd:#1c1c1e;--gl:rgba(28,28,30,.72);--sh:none}}
+[hidden]{display:none!important}*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.45 -apple-system,BlinkMacSystemFont,"SF Pro Text","Inter","Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+.app{display:grid;grid-template-columns:220px 1fr;min-height:100vh}
+.side{position:sticky;top:0;height:100vh;padding:28px 14px;background:var(--gl);backdrop-filter:saturate(180%) blur(24px);-webkit-backdrop-filter:saturate(180%) blur(24px);border-right:.5px solid var(--ln);display:flex;flex-direction:column;gap:2px}
+.side b{font-size:13px;color:var(--mu);font-weight:600;padding:0 12px 14px;letter-spacing:.02em}
+.side button{display:flex;gap:10px;align-items:center;text-align:left;border:0;border-radius:10px;padding:9px 12px;background:none;color:var(--fg);font-size:15px}.side button i{font-style:normal;width:20px;text-align:center}.side button.on{background:var(--bt);color:var(--bl);font-weight:600}
+main{padding:40px clamp(18px,4vw,56px) 110px;max-width:980px;width:100%;animation:in .4s ease}@keyframes in{from{opacity:0;transform:translateY(6px)}}
+h1{font-size:34px;font-weight:700;letter-spacing:-.8px;margin:0}h2{font-size:17px;font-weight:600;margin:0;letter-spacing:-.2px}
+h3{font-size:22px;font-weight:700;letter-spacing:-.4px;margin:34px 0 12px}.sub{color:var(--mu);font-size:15px;margin-top:2px}.mu{color:var(--mu);font-size:13px}
+button,input,select{font:inherit;color:inherit;border:0;background:var(--bt);color:var(--bl);border-radius:10px;padding:8px 14px;cursor:pointer;transition:transform .12s,opacity .12s}button:active{transform:scale(.97);opacity:.8}
+input,select{background:var(--bg);color:var(--fg);cursor:text}select{cursor:pointer}
+.pri{background:var(--bl);color:#fff;font-weight:600;border-radius:980px;padding:10px 22px}.pri[disabled]{opacity:.35;pointer-events:none}.gh{background:none}
+.card,.list{background:var(--cd);border-radius:18px;box-shadow:var(--sh);padding:18px}.list{padding:0;overflow:hidden}
+.li{display:flex;align-items:center;gap:12px;padding:13px 18px;border-bottom:.5px solid var(--ln)}.li:last-child{border:0}.li.x span.tt{text-decoration:line-through;color:var(--mu)}.li.ev{background:color-mix(in srgb,var(--c) 10%,transparent);font-weight:600}
+.g{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}.row{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.big{font-size:34px;font-weight:700;letter-spacing:-1px;line-height:1.05}.dot{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--c);flex:none}
+.seg{display:inline-flex;background:var(--bt);padding:3px;border-radius:11px;gap:2px;flex-wrap:wrap;margin:16px 0}.seg button{background:none;color:var(--fg);padding:6px 14px;border-radius:8px}.seg button.on{background:var(--cd);box-shadow:0 1px 3px rgba(0,0,0,.15);font-weight:600}
+.sc{overflow-x:auto}table{border-collapse:collapse;width:100%}td,th{padding:9px 10px;border-bottom:.5px solid var(--ln);text-align:left;white-space:nowrap;font-size:13px}th{color:var(--mu);font-weight:500}
+.ch{padding:3px 8px;font-size:12px;margin-right:4px;border-radius:8px;min-width:36px;background:var(--bg);color:var(--fg)}.ch.d{background:color-mix(in srgb,var(--c) 22%,transparent);color:var(--fg)}.ch.x{opacity:.2;pointer-events:none}
+details{border-bottom:.5px solid var(--ln)}summary{padding:15px 18px;cursor:pointer;display:flex;justify-content:space-between;gap:8px;font-weight:600;list-style:none}summary::-webkit-details-marker{display:none}
+.tp{display:flex;align-items:center;gap:12px;padding:9px 18px;flex-wrap:wrap}.tp>span:first-child{flex:1;min-width:160px}
+.cf{display:flex;gap:4px}.cf button{width:28px;height:28px;padding:0;border-radius:50%;background:var(--bg);color:var(--mu);font-size:12px}.cf button.on{color:#fff;font-weight:700}
+.k1{background:#ff453a!important}.k2{background:#ff9f0a!important}.k3{background:#ffd60a!important;color:#000!important}.k4{background:#8bd450!important}.k5{background:#30d158!important}
+.bar{height:6px;background:var(--ln);border-radius:3px;margin:10px 0 6px;overflow:hidden}.bar i{display:block;height:100%;background:var(--c,var(--bl));border-radius:3px;transition:width .5s}
+dialog{background:var(--cd);color:var(--fg);border:0;border-radius:22px;padding:24px;width:min(400px,92vw);box-shadow:0 20px 60px rgba(0,0,0,.35)}dialog::backdrop{background:rgba(0,0,0,.4);backdrop-filter:blur(6px)}dialog input{width:100%;margin:4px 0 8px}dialog .n{width:84px;display:inline-block}
+.btns{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}.tm{font-size:76px;font-weight:600;letter-spacing:-3px;font-variant-numeric:tabular-nums;text-align:center;margin:18px 0}
+.sp{display:flex;gap:8px;align-items:flex-end;height:90px}.sp div{flex:1;text-align:center;font-size:11px;color:var(--mu)}.sp i{display:block;background:var(--bl);border-radius:6px;margin-bottom:4px;min-height:3px}
+.rs{display:grid;grid-template-columns:1fr 1fr;gap:10px}.rs input,.rs select{width:100%}.ban{background:var(--bt);color:var(--bl);padding:12px 18px;border-radius:14px;margin:16px 0;display:flex;justify-content:space-between;align-items:center;gap:10px}
+#ob{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:32px 20px;animation:in .6s ease}#ob>div{max-width:620px;width:100%}
+.hero{font-size:clamp(40px,8vw,64px);font-weight:700;letter-spacing:-2px;line-height:1.02;margin:0 0 10px}.tiles{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:18px}
+.tile{background:var(--cd);box-shadow:var(--sh);color:var(--fg);padding:18px;border-radius:18px;text-align:left;border:2px solid transparent;display:flex;flex-direction:column;gap:2px}.tile.on{border-color:var(--bl)}.tile b{font-size:18px;letter-spacing:-.3px}.tile .mu{color:var(--mu)}
+@media(max-width:720px){.app{display:block}.side{position:fixed;bottom:0;left:0;right:0;top:auto;height:auto;flex-direction:row;padding:6px 6px calc(6px + env(safe-area-inset-bottom));z-index:5;justify-content:space-around;border-top:.5px solid var(--ln);border-right:0}.side b{display:none}.side button{flex-direction:column;gap:0;padding:6px 8px;font-size:10px}main{padding-top:28px}h1{font-size:30px}}
+
+:root[data-theme=dark]{--bg:#000;--fg:#f5f5f7;--mu:#98989d;--ln:#2c2c2e;--cd:#1c1c1e;--gl:rgba(28,28,30,.72);--sh:none;color-scheme:dark}
+:root[data-theme=light]{--bg:#f2f2f7;--fg:#1d1d1f;--mu:#86868b;--ln:#e5e5ea;--cd:#fff;--gl:rgba(250,250,252,.72);--sh:0 1px 2px rgba(0,0,0,.04),0 8px 24px rgba(0,0,0,.04);color-scheme:light}
+:root{padding-top:env(safe-area-inset-top,0px)}
+#ts{position:fixed;left:50%;bottom:96px;transform:translate(-50%,20px);background:var(--fg);color:var(--bg);padding:10px 18px;border-radius:980px;opacity:0;pointer-events:none;transition:.25s;z-index:30;font-size:14px;max-width:90vw}#ts.on{opacity:1;transform:translate(-50%,0)}
+.fc{text-align:center;padding:44px 24px;margin:18px 0}.fq{font-size:24px;font-weight:600;letter-spacing:-.4px}.fq.a{color:var(--c)}.fc hr{border:0;border-top:1px solid var(--ln);margin:22px 0}
+textarea{font:inherit;width:100%;min-height:170px;background:var(--bg);color:var(--fg);border:0;border-radius:10px;padding:10px;margin:8px 0}#md{width:min(540px,92vw)}
+h3.row{align-items:baseline}h3 button{font-size:13px;font-weight:500}.li .gh{padding:2px 8px}
+button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--bl);outline-offset:2px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+.tiles{grid-template-columns:repeat(auto-fill,minmax(190px,1fr))}
+</style></head><body>
+<div id="ob" hidden></div><div class="app" id="app"><nav class="side" id="nav"></nav><main id="v"></main></div>
+<dialog id="dg"><h2 id="dt"></h2><p class="mu">Marks <input id="dm" class="n" type="number" min="0"> / <input id="do" class="n" type="number" min="1"></p>
+<div class="mu">Question paper link</div><input id="dq" placeholder="Paste a link, or attach a PDF">
+<div class="mu">Mark scheme link</div><input id="dk" placeholder="Paste a link, or attach a PDF">
+<div class="btns"><button data-a="open" data-t="qp">Open paper</button><button data-a="open" data-t="ms">Open mark scheme</button><button data-a="att" data-t="qp">Attach paper PDF</button><button data-a="att" data-t="ms">Attach MS PDF</button></div><input type="file" id="fi" accept="application/pdf" hidden>
+<div class="btns"><button class="pri" data-a="save">Save</button><button data-a="done">Done, no score</button><button data-a="clr">Clear</button><button class="gh" data-a="cls">Close</button></div></dialog><dialog id="md"></dialog><div id="ts" role="status" aria-live="polite"></div>
+<script>
+const DAY=864e5,YRS=[2025,2024,2023,2022,2021,2020,2019],SES=[['m','Feb/Mar'],['s','May/Jun'],['w','Oct/Nov']],RS=['Knowledge gap','Misread question','Careless error','Ran out of time','Method / technique'];
+const ALL={
+'0610':{n:'Biology',c:'#30d158',f:'Biology (0610)',ps:[['2',40,'2027-03-04','Multiple choice'],['4',80,'2027-02-18','Theory'],['6',40,'2027-02-16','Alt. to practical']]},
+'0455':{n:'Economics',c:'#ff375f',f:'Economics (0455)',ps:[['1',30,'2027-03-01','Multiple choice'],['2',90,'2027-02-17','Structured']]},
+'0625':{n:'Physics',c:'#0a84ff',f:'Physics (0625)',ps:[['2',40,'2027-02-26','Multiple choice'],['4',80,'2027-02-12','Theory'],['6',40,'2027-02-04','Alt. to practical']]},
+'0264':{n:'Business Studies',c:'#5e5ce6',f:'Business Studies (0450)',u:'0450',ps:[['1',80,'2027-02-09','Paper 1'],['2',80,'2027-02-16','Paper 2']]},
+'0620':{n:'Chemistry',c:'#ff9f0a',f:'Chemistry (0620)',ps:[['2',40,'2027-03-03','Multiple choice'],['4',80,'2027-02-05','Theory'],['6',40,'2027-02-09','Alt. to practical']]},
+'0452':{n:'Accounting',c:'#40c8e0',f:'Accounting (0452)',ps:[['1',30,'2027-02-26','Multiple choice'],['2',120,'2027-02-04','Structured']]},
+'0580':{n:'Maths',c:'#ff453a',f:'Mathematics (0580)',ps:[['2',70,'2027-02-03','Short answer'],['4',130,'2027-02-15','Extended']]},
+'0417':{n:'ICT',c:'#64d2ff',f:'ICT (0417)',ps:[['2',80,'2027-01-27','Practical A'],['3',80,'2027-02-02','Practical B'],['1',80,'2027-02-08','Theory']]}};
+ALL['0580'].pc=[['1',56,'','Core short answer',60],['3',104,'','Core structured',120]];
+
+const CHO=[['Biology or Economics',['0610','0455']],['Physics or Business Studies',['0625','0264']],['Chemistry or Accounting',['0620','0452']]];
+const TD={
+'0610':`Characteristics & classification|Seven characteristics;Dichotomous keys;Classification;Main groups
+Organisation of organisms|Cell structure;Specialised cells;Levels of organisation;Magnification
+Movement in & out of cells|Diffusion;Osmosis;Active transport
+Biological molecules|Carbs, fats, proteins;Water;DNA structure;Food tests
+Enzymes|Properties & action;Temperature & pH
+Plant nutrition|Photosynthesis;Leaf structure;Mineral ions
+Human nutrition|Balanced diet;Digestion;Absorption
+Transport in plants|Xylem & phloem;Transpiration;Translocation
+Transport in animals|Heart;Blood vessels;Blood
+Diseases & immunity|Pathogens;Immune response;Vaccination
+Gas exchange & respiration|Gas exchange;Aerobic & anaerobic respiration
+Excretion|Kidney;Excretory products
+Coordination & response|Nervous system;Eye;Hormones;Homeostasis;Tropisms
+Drugs|Antibiotics;Misused drugs
+Reproduction|Asexual & sexual;Plants;Humans
+Inheritance|Chromosomes & mitosis;Meiosis;Monohybrid & Punnett squares
+Variation & selection|Variation;Natural selection;Artificial selection
+Organisms & environment|Energy flow & food webs;Carbon & nitrogen cycles;Populations
+Human influences|Livestock & deforestation;Pollution;Greenhouse effect;Conservation
+Biotechnology & GM|Biofuels;Biological washing powders;Genetic modification`,
+'0625':`Motion|Units & measuring;Speed, velocity, acceleration;Motion graphs;Free fall
+Forces|Mass, weight, density;Resultant force & Newton’s laws;Friction & terminal velocity;Hooke’s law;Moments;Momentum
+Energy, work & power|Energy stores & conservation;Work & power;Energy resources;Pressure
+Thermal physics|Particle model & gases;Specific heat capacity;Latent heat;Conduction, convection, radiation
+Waves|Wave properties;Reflection & refraction;Lenses & TIR;EM spectrum;Sound
+Electricity|Charge & current;Voltage & resistance;Circuits;Electrical safety
+Magnetism|Magnetic fields;Electromagnets & motor effect;Induction & transformers
+Nuclear physics|Atom & isotopes;Radioactivity & half-life;Uses & dangers
+Space physics|Earth, Sun, Moon;Solar System;Stars & Universe`,
+'0620':`States of matter|Particle model;Changes of state;Diffusion
+Atoms, elements & compounds|Atomic structure;Isotopes;Ionic bonding;Covalent bonding;Metallic bonding
+Stoichiometry|Formulae & equations;Relative masses;The mole;Concentration & gas volumes
+Electrochemistry|Electrolysis;Electrolysis of solutions;Cells
+Chemical energetics|Exothermic & endothermic;Bond energy
+Chemical reactions|Rates of reaction;Reversible reactions;Redox
+Acids, bases & salts|Properties of acids;pH & strength;Making salts
+The Periodic Table|Trends;Group I & VII;Transition elements;Noble gases
+Metals|Properties & reactivity;Extraction;Alloys & rusting
+Chemistry of the environment|Water;Air & pollutants;Fertilisers;Greenhouse gases
+Organic chemistry|Alkanes & alkenes;Alcohols & acids;Polymers;Fuels
+Experimental techniques & analysis|Apparatus & separation;Chromatography;Tests for ions & gases`,
+'0580':`Number|Types of number & HCF/LCM;Fractions, decimals, percentages;Ratio & proportion;Standard form & bounds;Indices & surds
+Algebra & graphs|Expressions & factorising;Equations & inequalities;Sequences;Simultaneous & quadratics;Graphs & gradients;Functions
+Coordinate geometry|Straight lines;Midpoint & length
+Geometry|Angles & polygons;Circle theorems;Similarity & congruence;Constructions
+Mensuration|Area & perimeter;Volume & surface area;Arcs & sectors
+Trigonometry|Right-angled trig;Sine & cosine rules;Bearings & 3D
+Transformations & vectors|Transformations;Vectors
+Probability|Basic & combined probability;Tree diagrams
+Statistics|Averages & charts;Cumulative frequency;Histograms`,
+'0417':`Computer systems|Hardware & software;Input & output devices;Storage;Networks
+Effects & safety|Effects of ICT;Safety & security;ICT applications
+Systems & communication|Systems life cycle;Audience & communication
+Files & images|File management;Images;Layout & styles
+Documents|Document production;Mail merge;Proofing
+Data handling|Spreadsheets;Charts & graphs;Databases
+Presentations & web|Presentations;Website authoring`,
+'0455':`Basic economic problem|Scarcity & opportunity cost;Factors of production;Production possibility curves
+Allocation of resources|Market & mixed systems;Demand;Supply;Price determination;Elasticity;Market failure
+Microeconomic decision-makers|Money & banking;Households & spending;Workers & wages;Trade unions;Firms’ costs & revenue;Economies of scale;Market structures
+Government & the macroeconomy|Government aims;Fiscal policy;Monetary policy;Supply-side policy;Inflation & deflation;Unemployment;Economic growth
+Economic development|Living standards;Poverty;Population
+International trade & globalisation|Specialisation & trade;Protection;Exchange rates;Balance of payments`,
+'0264':`Understanding business activity|Business activity & enterprise;Sectors & classification;Business objectives;Stakeholders;Structure & growth
+People in business|Motivation;Management & leadership;Recruitment & training;Employment law;Workforce planning
+Marketing|Market research;Product;Price;Promotion;Place;Technology in marketing
+Operations management|Production methods;Costs & break-even;Quality;Location;Supply chains
+Financial information & decisions|Sources of finance;Cash flow forecasts;Income statement;Statement of financial position;Ratios
+External influences|Economic & legal factors;Environmental & ethical factors;Globalisation`,
+'0452':`Fundamentals of accounting|Accounting concepts;Double entry & ledgers;Trial balance
+Sources & recording of data|Source documents;Books of prime entry;Journal
+Verification of records|Bank reconciliation;Control accounts;Suspense accounts & errors
+Accounting procedures|Depreciation;Bad debts & provisions;Accruals & prepayments;Disposal of assets
+Financial statements|Sole traders;Partnerships;Limited companies;Clubs & societies;Manufacturing accounts;Incomplete records
+Analysis & interpretation|Ratios;Cash flow statements;Interpreting results
+Principles & policies|Accounting principles;Inventory valuation;Capital & revenue expenditure`
+};
+let S;try{S=JSON.parse(localStorage.getItem('ig3'))}catch(e){}
+S=Object.assign({v:0,tier:{},cs:{},lb:0,pick:null,cards:[],mock:null,mh:[],tg:{},theme:'auto',dt:{},tp:{},sc:{},ln:{},fl:{},mk:[],logs:{},plan:[],pd:0,hrs:3,rest:-1,F:25,B:5},S||{});
+const T={};for(const c in TD)T[c]=TD[c].split('\n').map((l,i)=>{const[n,s]=l.split('|');return{n,s:s.split(';').map((x,j)=>({id:`${c}.${i}.${j}`,n:x}))}});
+loadCustom();S.plan=S.plan.filter(x=>ALL[x.c]);S.mk=S.mk.filter(x=>ALL[x.c]&&T[x.t.split('.')[0]]);
+const $=s=>document.querySelector(s),save=()=>{try{localStorage.setItem('ig3',JSON.stringify(S))}catch(e){}};
+const t0=()=>new Date().setHours(0,0,0,0),ds=d=>new Date(d).toLocaleDateString('en-CA'),dl=d=>Math.ceil((new Date(d+'T00:00')-t0())/DAY),fd=d=>new Date(d).toLocaleDateString(undefined,{weekday:'short',day:'numeric',month:'short'});
+const act=()=>S.pick||[],sub=c=>VIEW[c]||ALL[c],flat=c=>(T[c]||[]).flatMap(x=>x.s),dOf=(c,i)=>S.dt[c+'.'+i]||'';
+const keys=c=>sub(c).ps.flatMap(([p,m])=>YRS.flatMap(y=>SES.flatMap(([s])=>(s=='m'?[2]:[1,2,3]).map(v=>[`${c}_${y}${s}_${p}${v}`,p,m]))));
+const pc=k=>{const s=S.sc[k];return s&&s.m!==''&&s.m!=null?Math.round(s.m/s.o*100):null};
+const avg=a=>{a=a.filter(x=>x!=null);return a.length?a.reduce((x,y)=>x+y,0)/a.length:null};
+const rOf=id=>S.tp[id]?.r,tn=id=>{const[c,i,j]=id.split('.');return T[c][i].s[j].n};
+const nextP=(c,p)=>{const k=keys(c).find(([k,q])=>(!p||q==p)&&!S.sc[k]);if(!k)return 'review mistakes';const m=k[0].split('_');return `${SES.find(s=>m[1].endsWith(s[0]))[1]} ${m[1].slice(0,4)} P${k[1]}V${m[2].slice(1)}`};
+const dueL=()=>Object.entries(S.tp).filter(([id,x])=>x.r&&x.due<=Date.now()&&T[id.split('.')[0]]&&act().includes(id.split('.')[0])).map(x=>x[0]);
+const ex=()=>act().flatMap(c=>sub(c).ps.map((q,i)=>({c,p:q[0],l:q[3],d:dOf(c,i)}))).filter(x=>x.d&&dl(x.d)>=0).sort((a,b)=>a.d<b.d?-1:1);
+const tm=d=>Object.values(S.logs[ds(d)]||{}).reduce((a,b)=>a+b,0),streak=()=>{let n=0,d=t0();if(!tm(d))d-=DAY;while(tm(d)){n++;d-=DAY}return n};
+const ready=c=>{const f=flat(c),a=avg(keys(c).map(k=>pc(k[0]))),t=avg(f.map(x=>(rOf(x.id)||0)/5*100));return Math.round(a==null?t:t*.7+a*.3)};
+const ring=(p,c,s=64)=>{const r=s/2-5,L=2*Math.PI*r,m=s/2;return `<svg width="${s}" height="${s}"><circle cx="${m}" cy="${m}" r="${r}" fill="none" stroke="var(--ln)" stroke-width="6"/><circle cx="${m}" cy="${m}" r="${r}" fill="none" stroke="${c}" stroke-width="6" stroke-linecap="round" stroke-dasharray="${L*p/100} ${L}" transform="rotate(-90 ${m} ${m})"/><text x="${m}" y="${m+4}" text-anchor="middle" font-size="${s/4.4}" font-weight="600" fill="currentColor">${p}</text></svg>`};
+let tab='today',cur='0610',pl=false,dk,ob=null,P={mode:'f',left:S.F*60,run:false,end:0,sj:'0610'};
+const tabs=[['today','Today','◉'],['plan','Plan','▦'],['papers','Papers','▤'],['topics','Topics','☰'],['cards','Cards','▭'],['mock','Mock','◔'],['mistakes','Mistakes','✕'],['focus','Focus','◷']];
+const seg=a=>`<div class="seg">${act().map(c=>`<button data-a="${a}" data-c="${c}" class="${c==cur?'on':''}">${sub(c).n}</button>`).join('')}</div>`;
+const row=(c,x,r='')=>`<div class="li" style="--c:${sub(c).c}"><span class="dot"></span><span style="flex:1">${x}</span>${r}</div>`;
+function vOb(){const o=ob;
+if(o.step==2)return `<div><div class="hero" style="font-size:46px">Your levels.</div><div class="sub" style="font-size:18px;margin-bottom:22px">Choose Core or Extended for Maths. Exam dates can be set now or later on the Today screen.</div><div class="list">${o.sel.map(c=>row(c,ALL[c].n,ALL[c].pc?`<select data-a="tr" data-c="${c}"><option value="e" ${(o.tier[c]||'e')=='e'?'selected':''}>Extended</option><option value="c" ${o.tier[c]=='c'?'selected':''}>Core</option></select>`:'<span class="mu">One level</span>')).join('')}</div><label class="li" style="margin-top:14px"><input type="checkbox" id="pf"><span>Fill in the March 2027 dates I know about (Extended papers only)</span></label><div class="btns"><button class="pri" data-a="go">Start</button><button data-a="ob1">Back</button></div></div>`;
+return `<div><div class="hero">Welcome.</div><div class="sub" style="font-size:19px;margin-bottom:24px">Choose every subject you’re taking. If yours isn’t listed, add it yourself.</div><div class="tiles">${Object.keys(ALL).map(c=>`<button class="tile ${o.sel.includes(c)?'on':''}" data-a="pk" data-c="${c}"><b><span class="dot" style="--c:${ALL[c].c};margin-right:8px"></span>${ALL[c].n}</b><span class="mu">IGCSE ${c}${ALL[c].cs?' · yours':''}</span></button>`).join('')}<button class="tile" data-a="acs"><b>＋ Add a subject</b><span class="mu">Any other IGCSE subject</span></button></div><div class="btns"><button class="pri" data-a="ob2" ${o.sel.length?'':'disabled'}>Continue</button>${S.pick?'<button class="gh" data-a="nob">Cancel</button>':''}</div></div>`}
+function vToday(){const e=ex(),d=dueL(),tp=S.plan.filter(x=>x.t==t0());let h=`<h1>Today</h1><div class="sub">${new Date().toLocaleDateString(undefined,{weekday:'long',day:'numeric',month:'long'})}</div><h3>Overview</h3><div class="g"><div class="card"><div class="big">${e[0]?dl(e[0].d):'–'}</div><div class="mu">days to ${e[0]?sub(e[0].c).n+' P'+e[0].p:'first paper'}</div></div><div class="card"><div class="big">${streak()} 🔥</div><div class="mu">day streak · ${tm(t0())} min today</div></div><div class="card"><div class="big">${d.length}</div><div class="mu">topics to review</div></div></div>`;
+h+=S.pd&&S.plan.length?`<div class="ban"><span>Your ratings or dates changed.</span><button data-a="gen">Rebuild plan</button></div>`:'';
+h+=(ex().length?'':'<div class="ban"><span>Set your exam dates below to unlock your plan.</span></div>')+bkBan()+missedBan()+`<h3>Today’s plan</h3>${tp.length?`<div class="list">${tp.map(x=>`<label class="li ${x.d?'x':''} ${x.e?'ev':''}" style="--c:${sub(x.c).c}"><input type="checkbox" data-a="pd" data-i="${S.plan.indexOf(x)}" ${x.d?'checked':''}><span class="dot"></span><span class="tt" style="flex:1">${sub(x.c).n} · ${x.x}</span>${x.e?'':`<button class="gh" data-a="mv" data-i="${S.plan.indexOf(x)}" aria-label="Move task">⋯</button>`}</label>`).join('')}</div>`:`<div class="card row"><span class="mu">No plan for today yet.</span><button class="pri" data-a="gen">Build my plan</button></div>`}`;
+if(d.length)h+=`<h3>Review due</h3><div class="list">${d.slice(0,6).map(id=>row(id.split('.')[0],`${tn(id)} <span class="mu">${sub(id.split('.')[0]).n}</span>`,`<button data-a="rv" data-i="${id}" data-ok="1">Got it</button><button data-a="rv" data-i="${id}">Shaky</button>`)).join('')}</div>`;
+h+=`<h3>Subjects</h3><div class="g">${act().map(c=>{const ks=keys(c),dn=ks.filter(k=>S.sc[k[0]]).length,a=avg(ks.map(k=>pc(k[0])));return `<div class="card row" style="--c:${sub(c).c}"><div><h2>${sub(c).n}</h2><div class="mu">${a==null?'No scores yet':Math.round(a)+'% paper avg'}</div><div class="mu">${dn}/${ks.length} papers</div>${tgLine(c,a)}</div>${ring(ready(c),sub(c).c)}</div>`}).join('')}</div>
+${weekly()}${targets()}<h3>Exam dates</h3><div class="list">${act().map(c=>sub(c).ps.map((q,i)=>row(c,`${sub(c).n} P${q[0]} <span class="mu">${q[3]}</span>`,`<input type="date" data-a="dt" data-k="${c}.${i}" value="${dOf(c,i)}">`)).join('')).join('')}</div><p class="mu">March 2027 series (Zone 4) from a third-party listing. Confirm with your school.</p>
+<div class="btns"><button data-a="chg">Subjects & levels</button><button data-a="ex">Export backup</button><button data-a="im">Import backup</button><button data-a="th">Theme: ${S.theme}</button><button data-a="help">Shortcuts</button><button data-a="fd">Fill known dates</button><button data-a="rst">Reset data</button></div><p class="mu" style="margin-top:14px">Everything is saved on this device only, and nothing is uploaded. On iPhone, use Share → Add to Home Screen so Safari doesn’t clear your data. This is an unofficial study tool, not affiliated with Cambridge University Press &amp; Assessment, and paper links open third-party sites.</p><div class="btns" hidden></div>`;return h}
+function vPapers(){const c=cur,s=sub(c);let h=`<h1>Past papers</h1><div class="sub">Tap a variant to log marks, add links or attach PDFs.</div>${seg('sc')}<div class="card sc" style="padding:6px 12px;--c:${s.c}"><table><tr><th></th>${s.ps.map(([p,m,d,l])=>`<th>P${p} · ${l}</th>`).join('')}</tr>`;
+for(const y of YRS)for(const[se,l]of SES)h+=`<tr><td>${l} ${y}</td>${s.ps.map(([p,m])=>`<td>${[1,2,3].map(v=>{const k=`${c}_${y}${se}_${p}${v}`,q=pc(k),x=S.sc[k],off=se=='m'&&v!=2;return `<button class="ch ${x?'d':''} ${off?'x':''}" data-a="dg" data-k="${k}" data-m="${m}">${q!=null?q+'%':x?'✓':p+v}</button>`}).join('')}</td>`).join('')}</tr>`;
+return h+`</table></div>${c=='0264'||c=='0455'||c=='0452'?'<p class="mu">Economics, Accounting and Business are revised from March 2027. Older papers are still good practice. Business uses Business Studies (0450) papers.</p>':''}`}
+function vTopics(){const c=cur;let h=`<h1>Topics</h1><div class="sub">Rate your confidence from 1 (lost) to 5 (secure). Low scores get more time and earlier reviews.</div>${seg('tc')}<div class="list" style="--c:${sub(c).c}">`;
+T[c].forEach((ch,i)=>{const a=avg(ch.s.map(x=>rOf(x.id)||0));h+=`<details ${ch.s.some(x=>rOf(x.id)&&rOf(x.id)<3)?'open':''}><summary><span>${i+1}. ${ch.n}</span><span class="mu">${(a||0).toFixed(1)} / 5</span></summary>${ch.s.map(x=>`<div class="tp"><span>${x.n}</span><div class="cf">${[1,2,3,4,5].map(n=>`<button data-a="cf" data-i="${x.id}" data-n="${n}" class="${rOf(x.id)==n?'on k'+n:''}">${n}</button>`).join('')}</div></div>`).join('')}</details>`});return h+(T[c].length?'':'<div class="li mu">No topics for this subject yet.</div>')+'</div>'}
+function vMist(){const m=S.mk,cnt=RS.map(r=>m.filter(x=>x.r==r&&!x.f).length),mx=Math.max(1,...cnt);
+return `<h1>Mistakes</h1><div class="sub">Log every lost mark. Open mistakes pull that topic’s confidence down.</div><h3>New entry</h3><div class="card"><div class="rs"><select id="ms">${act().map(c=>`<option value="${c}">${sub(c).n}</option>`).join('')}</select><input id="mr" placeholder="Paper, e.g. Jun 2024 P4V2 Q5"><select id="mt"></select><input id="ml" type="number" placeholder="Marks lost"><select id="mw">${RS.map(r=>`<option>${r}</option>`).join('')}</select><input id="mn" placeholder="What went wrong"></div><div class="btns"><button class="pri" data-a="ma">Add</button></div></div>
+<h3>By cause</h3><div class="card">${RS.map((r,i)=>`<div class="row mu"><span>${r}</span><span>${cnt[i]}</span></div><div class="bar" style="margin:4px 0 12px"><i style="width:${cnt[i]/mx*100}%"></i></div>`).join('')}</div><h3>Log</h3>${m.length?`<div class="list">${m.map((x,i)=>`<div class="li ${x.f?'x':''}" style="--c:${sub(x.c).c}"><input type="checkbox" data-a="mf" data-i="${i}" ${x.f?'checked':''}><span class="tt" style="flex:1">${tn(x.t)}<br><span class="mu">${x.p||''} · -${x.l||0} · ${x.r}${x.n?' · '+x.n:''}</span></span><button class="gh" data-a="md" data-i="${i}">✕</button></div>`).join('')}</div>`:'<div class="card mu">Nothing logged yet.</div>'}`}
+function fillT(){const s=$('#ms'),t=$('#mt');if(s&&t)t.innerHTML=T[s.value].flatMap(ch=>ch.s).map(x=>`<option value="${x.id}">${x.n}</option>`).join('')}
+function vPlan(){let h=`<h1>Plan</h1><div class="sub">Built from your confidence ratings, due reviews and how close each paper is.</div>${missedBan()}<h3>Settings</h3><div class="card row"><label>Study blocks per day <input id="hr" type="number" min="1" max="10" value="${S.hrs}" style="width:70px"></label><label>Rest day <select id="rs">${['None','Sun','Mon','Tue','Wed','Thu','Fri','Sat'].map((d,i)=>`<option value="${i-1}" ${S.rest==i-1?'selected':''}>${d}</option>`).join('')}</select></label><button class="pri" data-a="gen">${S.plan.length?'Rebuild':'Build plan'}</button></div>`;
+if(S.pd&&S.plan.length)h+=`<div class="ban"><span>Ratings or dates changed since this plan was built.</span><button data-a="gen">Rebuild</button></div>`;
+if(!S.plan.length)return h;const by={};S.plan.forEach((x,i)=>{if(x.t>=t0()&&(pl||x.t<t0()+7*DAY))(by[x.t]=by[x.t]||[]).push([x,i])});
+for(const t of Object.keys(by).sort((a,b)=>a-b))h+=`<h3 class="row">${+t==t0()?'Today':fd(+t)}<button data-a="off" data-t="${t}">Day off</button></h3><div class="list">${by[t].sort((a,b)=>(b[0].e||0)-(a[0].e||0)).map(([x,i])=>`<label class="li ${x.d?'x':''} ${x.e?'ev':''}" style="--c:${sub(x.c).c}"><input type="checkbox" data-a="pd" data-i="${i}" ${x.d?'checked':''}><span class="dot"></span><span class="tt" style="flex:1">${sub(x.c).n} · ${x.x}</span>${x.e?'':`<button class="gh" data-a="mv" data-i="${S.plan.indexOf(x)}" aria-label="Move task">⋯</button>`}</label>`).join('')}</div>`;
+return h+`<div class="btns"><button data-a="pl">${pl?'Show next 7 days':'Show full plan'}</button></div>`}
+function gen(){const L=ex();if(!L.length){toast('Add your exam dates on Today first');return}const T0=t0(),end=+new Date(L[L.length-1].d+'T00:00'),plan=S.plan.filter(x=>x.t<T0),q={},pt={},kc={},used=new Set(),at=d=>+new Date(d+'T00:00'),carry={};plan.forEach(x=>{if(!x.d&&!x.e&&!x.cu&&x.id){x.cu=1;(carry[x.c]=carry[x.c]||[]).push(x)}});
+act().forEach(c=>{q[c]=[...flat(c)].sort((a,b)=>(rOf(a.id)||3)-(rOf(b.id)||3));pt[c]=0;kc[c]=0});
+for(let d=T0;d<=end;d+=DAY){L.filter(x=>at(x.d)==d).forEach(x=>plan.push({t:d,c:x.c,x:`Exam · Paper ${x.p} (${x.l})`,d:0,e:1}));if(new Date(d).getDay()==S.rest)continue;
+const up=act().filter(c=>L.some(x=>x.c==c&&at(x.d)>d));if(!up.length)continue;const n={};
+for(let i=0;i<S.hrs;i++){let b,bw=-1;up.forEach(c=>{const nx=L.find(x=>x.c==c&&at(x.d)>d),days=(at(nx.d)-d)/DAY,need=(avg(flat(c).map(x=>6-(rOf(x.id)||3)))??3)/5,a=avg(keys(c).map(k=>pc(k[0]))),w=need*(a==null?1:1.3-a/100)/(days+2)/(1+(n[b0=c]||0)*.8);if(w>bw){bw=w;b=c}});
+n[b]=(n[b]||0)+1;const nx=L.find(x=>x.c==b&&at(x.d)>d);let x,id;
+const cr=carry[b]&&carry[b].shift();if(cr){x='Catch-up · '+cr.x.replace(/^(Revise|Review) · /,'');id=cr.id}else if(kc[b]++%3==2)x=`Past paper · ${nextP(b,nx.p)}`;else{const dv=Object.keys(S.tp).find(k=>k.startsWith(b+'.')&&S.tp[k].r&&S.tp[k].due<=d&&!used.has(k)),tp=dv?{id:dv,n:tn(dv)}:q[b].length?q[b][pt[b]++%q[b].length]:null;if(tp){used.add(tp.id);x=`${dv?'Review':'Revise'} · ${tp.n}`;id=tp.id}else x='Past paper · '+nextP(b,nx.p)}
+plan.push({t:d,c:b,x,d:0,id})}}S.plan=plan;S.pd=0;save();render()}
+var b0;
+function vFocus(){const w=[...Array(7)].map((_,i)=>{const d=t0()-(6-i)*DAY;return[new Date(d).toLocaleDateString(undefined,{weekday:'short'}),tm(d)]}),mx=Math.max(30,...w.map(x=>x[1])),tot=Object.values(S.logs).reduce((a,l)=>a+Object.values(l).reduce((x,y)=>x+y,0),0);
+return `<h1>Focus</h1><div class="sub">Pomodoro sessions count toward your streak.</div><div class="card" style="margin-top:20px"><div class="row"><select id="fs">${act().map(c=>`<option value="${c}" ${c==P.sj?'selected':''}>${sub(c).n}</option>`).join('')}</select><span class="mu">Focus <input id="fm" type="number" value="${S.F}" style="width:60px"> · Break <input id="bm" type="number" value="${S.B}" style="width:60px"> min</span></div><div class="tm" id="tm"></div><div class="btns" style="justify-content:center"><button class="pri" data-a="ts" id="tg"></button><button data-a="tr">Reset</button></div><div class="mu" style="text-align:center;margin-top:10px" id="tl"></div></div>
+<h3>Stats</h3><div class="g"><div class="card"><div class="big">${streak()} 🔥</div><div class="mu">day streak</div></div><div class="card"><div class="big">${tm(t0())}</div><div class="mu">minutes today</div></div><div class="card"><div class="big">${(tot/60).toFixed(1)}</div><div class="mu">total hours</div></div></div><h3>Last 7 days</h3><div class="card"><div class="sp">${w.map(x=>`<div><i style="height:${x[1]/mx*60}px"></i>${x[0]}</div>`).join('')}</div></div>`}
+function tick(){mockTick();const e=$('#tm');if(P.run){P.left=Math.round((P.end-Date.now())/1e3);if(P.left<=0)fin()}if(!e)return;const m=Math.max(0,P.left);e.textContent=`${String(Math.floor(m/60)).padStart(2,'0')}:${String(m%60).padStart(2,'0')}`;$('#tg').textContent=P.run?'Pause':'Start';$('#tl').textContent=P.mode=='f'?'Focus session':'Break';document.title=P.run?e.textContent+' · IGCSE':'IGCSE Boards'}
+function fin(){if(P.mode=='f'){const l=S.logs[ds(Date.now())]=S.logs[ds(Date.now())]||{};l[P.sj]=(l[P.sj]||0)+S.F;save()}try{const a=new AudioContext,o=a.createOscillator();o.connect(a.destination);o.start();o.stop(a.currentTime+.4)}catch(e){}P.mode=P.mode=='f'?'b':'f';P.left=(P.mode=='f'?S.F:S.B)*60;P.run=false;render()}
+setInterval(tick,1000);
+function render(){const o=!S.pick||ob;$('#ob').hidden=!o;$('#app').hidden=!!o;if(o){$('#ob').innerHTML=vOb();return}if(!act().includes(cur))cur=act()[0];
+$('#nav').innerHTML='<b>IGCSE BOARDS</b>'+tabs.map(([k,l,i])=>`<button data-a="tab" data-t="${k}" class="${tab==k?'on':''}"><i>${i}</i>${l}</button>`).join('');if(!P.run)document.title=(dueL().length?'('+dueL().length+') ':'')+'IGCSE Boards';$('#v').innerHTML={today:vToday,papers:vPapers,topics:vTopics,cards:vCards,mock:vMock,mistakes:vMist,plan:vPlan,focus:vFocus}[tab]();fillT();tick()}
+
+const applyTheme=()=>{document.documentElement.dataset.theme=S.theme=='auto'?'':S.theme};
+const fmt=n=>`${String(Math.floor(n/60)).padStart(2,'0')}:${String(n%60).padStart(2,'0')}`,uid=()=>Math.random().toString(36).slice(2,9),esc=x=>String(x).replace(/&/g,'&amp;').replace(/</g,'&lt;');
+const label=k=>{const m=k.split('_');return `${SES.find(q=>m[1].endsWith(q[0]))[1]} ${m[1].slice(0,4)} P${m[2][0]}V${m[2].slice(1)}`};
+function toast(m){const t=$('#ts');t.textContent=m;t.className='on';clearTimeout(toast.h);toast.h=setTimeout(()=>t.className='',2600)}
+function modal(h){const d=$('#md');d.innerHTML=h;d.showModal()}
+const missed=()=>S.plan.filter(x=>x.t<t0()&&!x.d&&!x.e&&!x.cu&&x.id).length;
+function missedBan(){const n=missed();return n?`<div class="ban"><span>${n} earlier task${n>1?'s':''} weren’t finished.</span><button data-a="cu">Catch up</button></div>`:''}
+const GR=[['None',0],['C',60],['B',70],['A',80],['A*',90]];
+function tgLine(c,a){const g=S.tg[c];if(!g)return '';const nx=ex().find(x=>x.c==c),mx=nx&&sub(c).ps.find(q=>q[0]==nx.p)[1];return `<div class="mu">Target ≈${g}% · ${a==null?'no scores yet':a>=g?'on track':Math.round(g-a)+' pts to go'}${nx?` · aim for ${Math.ceil(g*mx/100)}/${mx} on P${nx.p}`:''}</div>`}
+function targets(){return `<h3>Targets</h3><div class="list">${act().map(c=>row(c,sub(c).n,`<select data-a="tg" data-c="${c}">${GR.map(([l,v])=>`<option value="${v}" ${(S.tg[c]||0)==v?'selected':''}>${v?`Aiming for ${l} (≈${v}%)`:'No target'}</option>`).join('')}</select>`)).join('')}</div><p class="mu">Grade boundaries change every series, so treat these percentages as rough guides.</p>`}
+function weekly(){const w=Date.now()-7*DAY,mins=[...Array(7)].reduce((a,_,i)=>a+tm(t0()-i*DAY),0),pp=Object.values(S.sc).filter(x=>x.t>w).length,mk=S.mk.filter(x=>(x.t||0)>w).length,fx=S.mk.filter(x=>x.f).length;
+const low=Object.entries(S.tp).filter(([id,x])=>x.r&&T[id.split('.')[0]]&&act().includes(id.split('.')[0])).sort((a,b)=>a[1].r-b[1].r).slice(0,3).map(x=>tn(x[0])),ws=act().map(c=>[c,ready(c)]).sort((a,b)=>a[1]-b[1])[0];
+return `<h3>This week</h3><div class="card"><div class="g" style="grid-template-columns:repeat(auto-fill,minmax(120px,1fr))"><div><div class="big">${(mins/60).toFixed(1)}</div><div class="mu">hours focused</div></div><div><div class="big">${pp}</div><div class="mu">papers done</div></div><div><div class="big">${mk}</div><div class="mu">mistakes logged</div></div><div><div class="big">${fx}</div><div class="mu">mistakes fixed</div></div></div><p class="mu" style="margin:14px 0 0">Next week, put the most time into <b>${sub(ws[0]).n}</b>${low.length?`, starting with ${low.join(', ')}`:''}.</p></div>`}
+let CR={on:0};const cdue=()=>S.cards.filter(x=>act().includes(x.c)&&x.due<=Date.now());
+function vCards(){if(CR.on)return vRev();const c=cur,d=cdue(),l=S.cards.filter(x=>x.c==c);
+return `<h1>Cards</h1><div class="sub">Flashcards on a spaced-repetition schedule.</div><div class="btns"><button class="pri" data-a="crs" ${d.length?'':'disabled'}>Review ${d.length} due</button></div>${seg('sc')}<div class="card"><div class="rs"><select id="ct">${flat(c).map(x=>`<option value="${x.id}">${x.n}</option>`).join('')}</select><span></span><input id="cq" placeholder="Front, e.g. Define osmosis"><input id="ca" placeholder="Back"></div><div class="btns"><button class="pri" data-a="cad">Add card</button><button data-a="cbk">Bulk import</button></div></div><h3>${sub(c).n} · ${l.length} card${l.length==1?'':'s'}</h3>${l.length?`<div class="list">${l.map(x=>row(c,`${esc(x.q)}<div class="mu">${tn(x.t)} · ${x.due<=Date.now()?'due now':'next '+ds(x.due).slice(5)}</div>`,`<button class="gh" data-a="cdl" data-i="${x.id}" aria-label="Delete card">✕</button>`)).join('')}</div>`:'<div class="card mu">No cards yet. Add your own definitions, formulas and key terms.</div>'}`}
+function vRev(){const x=S.cards.find(k=>k.id==CR.list[CR.i]);if(!x){CR.on=0;return vCards()}
+return `<h1>Review</h1><div class="sub">${CR.i+1} of ${CR.list.length}</div><div class="card fc" style="--c:${sub(x.c).c}"><div class="mu">${sub(x.c).n} · ${tn(x.t)}</div><div class="fq">${esc(x.q)}</div>${CR.show?`<hr><div class="fq a">${esc(x.a)}</div>`:''}</div><div class="btns">${CR.show?`<button data-a="crg" data-g="0">Again</button><button class="pri" data-a="crg" data-g="1">Good</button><button data-a="crg" data-g="2">Easy</button>`:`<button class="pri" data-a="crw">Show answer</button>`}<button class="gh" data-a="cre">End session</button></div>`}
+function vMock(){const m=S.mock;let h=`<h1>Mock exam</h1><div class="sub">Timed practice under real conditions. Results are saved to your past papers.</div>`;
+if(m){const q=sub(m.c),p=q.ps.find(z=>z[0]==m.p);h+=`<div class="card" style="margin-top:20px"><h2>${q.n} · ${label(m.k)}</h2><div class="mu">${m.mins} minutes · ${p[1]} marks</div>${m.fin?`<div class="rs" style="margin-top:14px"><input id="mm" type="number" placeholder="Your marks" min="0"><input id="mo" type="number" value="${p[1]}"></div><div class="btns"><button class="pri" data-a="msv">Save result</button></div>`:`<div class="tm" id="mk"></div><div class="btns" style="justify-content:center"><button data-a="mop" data-t="qp">Open paper</button><button data-a="mop" data-t="ms">Mark scheme</button><button class="pri" data-a="mfn">Finish</button><button class="gh" data-a="mcx">Cancel</button></div>`}</div>`}
+else h+=`<h3>Start a mock</h3><div class="card"><div class="rs"><select id="mc">${act().flatMap(c=>sub(c).ps.map(q=>`<option value="${c}|${q[0]}">${sub(c).n} · Paper ${q[0]} (${q[3]}, ${q[4]} min)</option>`)).join('')}</select><button class="pri" data-a="mst">Start</button></div><p class="mu">Uses your next undone past paper for that paper. The timer follows the real exam length.</p></div>`;
+const hs=S.mh,av=hs.length?Math.round(hs.reduce((a,x)=>a+x.tk/x.al,0)/hs.length*100):0;
+return h+`<h3>History</h3>`+(hs.length?`<div class="list">${hs.map(x=>row(x.c,`${label(x.k)} <span class="mu">${sub(x.c).n}</span>`,`<span class="mu">${x.pct}% · ${x.tk}/${x.al} min${x.tk>x.al?' · over time':''}</span>`)).join('')}</div><p class="mu">You use about ${av}% of the allowed time on average.</p>`:`<div class="card mu">No mocks yet.</div>`)}
+function mockTick(){const e=$('#mk');if(!e||!S.mock)return;const l=Math.round((S.mock.end-Date.now())/1e3);e.textContent=(l<0?'−':'')+fmt(Math.abs(l));e.style.color=l<0?'#ff453a':''}
+let VIEW={};const PAL=['#ff2d55','#34c759','#ffcc00','#af52de','#00c7be','#a2845e'];
+function rebuildView(){VIEW={};for(const c in ALL){const a=ALL[c];VIEW[c]=S.tier[c]=='c'&&a.pc?Object.assign({},a,{ps:a.pc}):a}}
+function buildT(c,raw){return raw.split('\n').filter(l=>l.includes('|')).map((l,i)=>{const[n,r]=l.split('|');return{n:n.trim(),s:r.split(';').map(x=>x.trim()).filter(Boolean).map((x,j)=>({id:`${c}.${i}.${j}`,n:x}))}})}
+function loadCustom(){for(const c in S.cs){const x=S.cs[c];ALL[c]={n:x.n,c:x.c,f:x.f,ps:x.ps,cs:1};T[c]=x.t?buildT(c,x.t):[]}}
+function newOb(){return{sel:(S.pick||[]).slice(),tier:Object.assign({},S.tier),step:1}}
+function fillDates(){act().forEach(c=>{if(S.tier[c]=='c')return;ALL[c].ps.forEach((q,i)=>{if(q[2]&&!S.dt[c+'.'+i])S.dt[c+'.'+i]=q[2]})})}
+function migrate(){if(S.v<4){if(S.pick&&S.pick.length==3)S.pick=[...S.pick,'0580','0417'];if(S.pick)S.pick.forEach(c=>{ALL[c]&&ALL[c].ps.forEach((q,i)=>{if(q[2]&&!S.dt[c+'.'+i])S.dt[c+'.'+i]=q[2]})});S.v=4;save()}
+rebuildView();try{navigator.storage&&navigator.storage.persist&&navigator.storage.persist()}catch(e){}}
+function bkBan(){const n=Object.keys(S.sc).length+Object.keys(S.tp).length;return S.pick&&n>3&&Date.now()-(S.lb||0)>14*DAY?'<div class="ban"><span>Back up your data. It lives only in this browser.</span><button data-a="ex">Back up</button></div>':''}
+function regSW(){try{if('serviceWorker' in navigator&&/^https?:$/.test(location.protocol))navigator.serviceWorker.register('sw.js').catch(()=>{})}catch(e){}}
+function more(a,D){switch(a){
+case 'pk':{const i=ob.sel.indexOf(D.c);if(i<0)ob.sel.push(D.c);else ob.sel.splice(i,1);render();return 1}
+case 'ob2':ob.step=2;render();return 1;
+case 'ob1':ob.step=1;render();return 1;
+case 'nob':ob=null;render();return 1;
+case 'chg':ob=newOb();render();return 1;
+case 'go':{const pf=$('#pf')&&$('#pf').checked;S.pick=ob.sel.slice();ob.sel.forEach(c=>{const t=ob.tier[c]||'e';if((S.tier[c]||'e')!=t)for(const k in S.dt)if(k.startsWith(c+'.'))delete S.dt[k];S.tier[c]=t});rebuildView();if(pf)fillDates();S.pd=1;ob=null;save();if(ex().length)gen();render();return 1}
+case 'fd':fillDates();save();render();toast('Dates filled in for Extended papers');return 1;
+case 'dl':{try{S.lb=Date.now();save();const b=new Blob([JSON.stringify(S)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='igcse-boards-backup-'+ds(Date.now())+'.json';document.body.appendChild(a);a.click();a.remove();toast('Backup downloaded')}catch(e){toast('Downloads aren’t available here. Use Copy text instead.')}return 1}
+case 'acs':modal(`<h2>Add a subject</h2><div class="rs"><input id="cn" placeholder="Name, e.g. Geography"><input id="cc" placeholder="Syllabus code, e.g. 0460"></div><p class="mu">Papers as number:marks:minutes, separated by commas. Example: 1:60:105, 2:60:90</p><input id="cpp" placeholder="1:60:105, 2:60:90"><p class="mu">Topics are optional. One chapter per line as Chapter|topic;topic;topic</p><textarea id="ctt" placeholder="Rivers|Erosion;Deposition;Flooding"></textarea><div class="btns"><button class="pri" data-a="acs2">Add subject</button><button data-a="mc">Cancel</button></div>`);return 1;
+case 'acs2':{const n=$('#cn').value.trim(),c=$('#cc').value.replace(/[^A-Za-z0-9]/g,''),ps=$('#cpp').value.split(',').map(x=>x.trim().split(':').map(y=>y.trim())).filter(a=>/^\d$/.test(a[0])&&+a[1]).map(a=>[a[0],+a[1],'','Paper '+a[0],+a[2]||90]);
+if(!n||!c||!ps.length){toast('Add a name, a code and at least one paper');return 1}if(ALL[c]){toast('That code is already in use');return 1}
+S.cs[c]={n,c:PAL[Object.keys(S.cs).length%PAL.length],f:n+' ('+c+')',ps,t:$('#ctt').value.trim()};loadCustom();rebuildView();if(ob)ob.sel.push(c);$('#md').close();save();render();return 1}
+
+case 'ex':modal(`<h2>Export backup</h2><p class="mu">Copy this text and keep it safe. Attached PDFs aren’t included.</p><textarea id="bt" readonly>${esc(JSON.stringify(S))}</textarea><div class="btns"><button class="pri" data-a="dl">Download file</button><button data-a="cp">Copy text</button><button data-a="mc">Close</button></div>`);return 1;
+case 'im':modal(`<h2>Import backup</h2><input type="file" id="bf" accept=".json,application/json"><textarea id="bt" placeholder="Choose a backup file, or paste its text here"></textarea><div class="btns"><button class="pri" data-a="imp">Import</button><button data-a="mc">Close</button></div>`);return 1;
+case 'cp':{const t=$('#bt');S.lb=Date.now();save();t.select();try{document.execCommand('copy');toast('Copied')}catch(e){}return 1}
+case 'imp':try{S=Object.assign(S,JSON.parse($('#bt').value));save();$('#md').close();applyTheme();render();toast('Backup imported')}catch(e){toast('That backup couldn’t be read')}return 1;
+case 'mc':$('#md').close();return 1;
+case 'help':modal(`<h2>Keyboard shortcuts</h2><p class="mu">1 Today · 2 Plan · 3 Papers · 4 Topics · 5 Cards · 6 Mock · 7 Mistakes · 8 Focus<br>N quick-add a mistake · ? this help</p><div class="btns"><button class="pri" data-a="mc">Done</button></div>`);return 1;
+case 'rst':modal(`<h2>Reset all data?</h2><p class="mu">This deletes your scores, ratings, cards and plan on this device.</p><div class="btns"><button class="pri" data-a="rst2">Reset</button><button data-a="mc">Cancel</button></div>`);return 1;
+case 'rst2':try{localStorage.removeItem('ig3')}catch(e){}location.reload();return 1;
+case 'th':S.theme={auto:'light',light:'dark',dark:'auto'}[S.theme]||'auto';save();applyTheme();render();return 1;
+case 'cu':gen();toast('Plan rebuilt with missed tasks first');return 1;
+case 'mv':{const i=+D.i,x=S.plan[i];modal(`<h2>${esc(x.x)}</h2><div class="rs"><input type="date" id="mvd" value="${ds(x.t)}"><button class="pri" data-a="mvg" data-i="${i}">Move</button></div><div class="btns"><button data-a="mvt" data-i="${i}">Push a day</button><button data-a="mvx" data-i="${i}">Delete task</button><button class="gh" data-a="mc">Cancel</button></div>`);return 1}
+case 'mvg':if($('#mvd').value)S.plan[+D.i].t=+new Date($('#mvd').value+'T00:00');$('#md').close();save();render();return 1;
+case 'mvt':S.plan[+D.i].t=Math.max(S.plan[+D.i].t,t0())+DAY;$('#md').close();save();render();return 1;
+case 'mvx':S.plan.splice(+D.i,1);$('#md').close();save();render();return 1;
+case 'off':S.plan.forEach(x=>{if(x.t==+D.t&&!x.d&&!x.e)x.t+=DAY});save();render();toast('Tasks pushed to the next day');return 1;
+case 'crs':CR={on:1,list:cdue().map(x=>x.id).sort(()=>Math.random()-.5),i:0,show:0};render();return 1;
+case 'crw':CR.show=1;render();return 1;
+case 'cre':CR.on=0;render();return 1;
+case 'crg':{const x=S.cards.find(k=>k.id==CR.list[CR.i]),g=+D.g;if(g==0){x.n=0;x.due=Date.now()-1;CR.list.push(x.id)}else{x.n=(x.n||0)+g;x.due=t0()+[1,3,7,14,30,60,90][Math.min(x.n,6)]*DAY}CR.i++;CR.show=0;if(CR.i>=CR.list.length){CR.on=0;toast('Session complete')}save();render();return 1}
+case 'cad':{const q=$('#cq').value.trim(),an=$('#ca').value.trim();if(!q||!an){toast('Add a front and a back');return 1}S.cards.push({id:uid(),c:cur,t:$('#ct').value,q,a:an,due:t0(),n:0});save();render();return 1}
+case 'cbk':modal(`<h2>Bulk import</h2><p class="mu">One card per line, written as Front :: Back. Cards go to ${sub(cur).n}.</p><select id="bt2">${flat(cur).map(x=>`<option value="${x.id}">${x.n}</option>`).join('')}</select><textarea id="bt" placeholder="Osmosis :: Movement of water across a partially permeable membrane"></textarea><div class="btns"><button class="pri" data-a="cbi">Import</button><button data-a="mc">Cancel</button></div>`);return 1;
+case 'cbi':{let n=0;$('#bt').value.split('\n').forEach(l=>{const p=l.split('::');if(p.length>1&&p[0].trim()&&p[1].trim()){S.cards.push({id:uid(),c:cur,t:$('#bt2').value,q:p[0].trim(),a:p.slice(1).join('::').trim(),due:t0(),n:0});n++}});$('#md').close();save();render();toast(n+' cards added');return 1}
+case 'cdl':S.cards=S.cards.filter(x=>x.id!=D.i);save();render();return 1;
+case 'mst':{const[c,p]=$('#mc').value.split('|'),k=keys(c).find(x=>x[1]==p&&!S.sc[x[0]]);if(!k){toast('Every past paper for that paper is done');return 1}const mins=sub(c).ps.find(z=>z[0]==p)[4];S.mock={k:k[0],c,p,mins,start:Date.now(),end:Date.now()+mins*6e4};save();render();return 1}
+case 'mop':dk=S.mock.k;openP(D.t);return 1;
+case 'mfn':S.mock.fin=1;S.mock.tk=Math.round((Date.now()-S.mock.start)/6e4);save();render();return 1;
+case 'mcx':S.mock=null;save();render();return 1;
+case 'msv':{const v=$('#mm').value;if(v===''){toast('Enter your marks');return 1}const m=S.mock,o=+$('#mo').value||1;S.sc[m.k]={m:+v,o,t:Date.now(),mock:1};S.mh.unshift({k:m.k,c:m.c,pct:Math.round(+v/o*100),tk:m.tk,al:m.mins});S.mock=null;save();render();toast('Result saved to past papers');return 1}
+}return 0}
+document.addEventListener('keydown',e=>{if(e.metaKey||e.ctrlKey||e.altKey||/INPUT|TEXTAREA|SELECT/.test(e.target.tagName)||!S.pick||ob||$('#md').open||$('#dg').open)return;const o=['today','plan','papers','topics','cards','mock','mistakes','focus'];
+if(/^[1-8]$/.test(e.key)){tab=o[e.key-1];render()}else if(e.key=='n'||e.key=='N'){tab='mistakes';render();setTimeout(()=>{const f=$('#mr');f&&f.focus()},0);e.preventDefault()}else if(e.key=='?')more('help',{})});
+const idb=()=>new Promise((r,j)=>{const q=indexedDB.open('igcse',1);q.onupgradeneeded=()=>q.result.createObjectStore('f');q.onsuccess=()=>r(q.result);q.onerror=j});
+const fput=async(k,b)=>{const d=await idb();d.transaction('f','readwrite').objectStore('f').put(b,k)},fget=async k=>{const d=await idb();return new Promise(r=>{const q=d.transaction('f').objectStore('f').get(k);q.onsuccess=()=>r(q.result);q.onerror=()=>r()})};
+const defUrl=(k,t)=>{const[c,s,pv]=k.split('_');return `https://papers.gceguide.com/Cambridge%20IGCSE/${encodeURIComponent(sub(c).f)}/${s.slice(0,4)}/${sub(c).u||c}_${s[4]}${s.slice(2,4)}_${t}_${pv}.pdf`};
+async function openP(t){const k=dk+t;if(S.fl[k]){const b=await fget(k);if(b)return window.open(URL.createObjectURL(b))}window.open(S.ln[k]||defUrl(dk,t),'_blank')}
+const setR=(id,r)=>{S.tp[id]=r?{r,n:0,due:t0()+[1,2,4,8,16][r-1]*DAY}:{};S.pd=1};
+document.addEventListener('click',async e=>{const b=e.target.closest('button');if(!b||!b.dataset.a)return;const a=b.dataset.a,D=b.dataset;
+if(more(a,D)){}else if(a=='tab'){tab=D.t;render()}else if(a=='sc'||a=='tc'){cur=D.c;render()}
+else if(a=='pk'){ob[D.i]=D.c;render()}else if(a=='go'){S.pick=ob;ob=null;save();gen()}else if(a=='nob'){ob=null;render()}else if(a=='chg'){ob=[...S.pick];render()}
+else if(a=='cf'){setR(D.i,rOf(D.i)==+D.n?0:+D.n);save();render()}
+else if(a=='rv'){const x=S.tp[D.i];if(D.ok){x.n=(x.n||0)+1;x.r=Math.min(5,x.r+1);x.due=t0()+[1,3,7,14,30,60][Math.min(x.n,5)]*DAY}else setR(D.i,Math.max(1,x.r-1));S.pd=1;save();render()}
+else if(a=='dg'){dk=D.k;const x=S.sc[dk]||{};$('#dt').textContent=`${sub(dk.split('_')[0]).n} · ${dk.split('_').slice(1).join(' ')}`;$('#dm').value=x.m??'';$('#do').value=x.o||D.m;$('#dq').value=S.ln[dk+'qp']||'';$('#dk').value=S.ln[dk+'ms']||'';$('#dg').showModal()}
+else if(a=='open')openP(D.t);else if(a=='att'){const f=$('#fi');f.onchange=async()=>{if(f.files[0]){await fput(dk+D.t,f.files[0]);S.fl[dk+D.t]=1;save();toast('PDF attached')}f.value=''};f.click()}
+else if(a=='save'||a=='done'){const m=$('#dm').value;S.sc[dk]={m:a=='done'||m===''?'':+m,o:+$('#do').value||1,t:Date.now()};S.ln[dk+'qp']=$('#dq').value.trim();S.ln[dk+'ms']=$('#dk').value.trim();save();$('#dg').close();render()}
+else if(a=='clr'){delete S.sc[dk];save();$('#dg').close();render()}else if(a=='cls')$('#dg').close();
+else if(a=='ma'){const t=$('#mt').value;if(!t)return;S.mk.unshift({c:$('#ms').value,t,p:$('#mr').value,l:+$('#ml').value,r:$('#mw').value,n:$('#mn').value,f:0,t:Date.now()});if((rOf(t)||3)>2)setR(t,2);save();render()}
+else if(a=='md'){S.mk.splice(D.i,1);save();render()}else if(a=='gen')gen();else if(a=='pl'){pl=!pl;render()}
+else if(a=='ts'){if(P.run)P.run=false;else{P.run=true;P.end=Date.now()+P.left*1e3;P.sj=$('#fs').value}tick()}else if(a=='tr'){P.run=false;P.mode='f';P.left=S.F*60;tick()}
+else if(a=='ex'){const j=JSON.stringify(S);try{await navigator.clipboard.writeText(j);alert('Backup copied to clipboard. Attached PDFs are not included.')}catch(x){prompt('Copy this backup:',j)}}
+else if(a=='im'){const j=prompt('Paste backup:');try{if(j){S=Object.assign(S,JSON.parse(j));save();render()}}catch(x){alert('Invalid backup')}}});
+document.addEventListener('change',e=>{const t=e.target,D=t.dataset;if(D.a=='tg'){S.tg[D.c]=+t.value;save();render();return}if(D.a=='tr'){ob.tier[D.c]=t.value;return}if(t.id=='bf'&&t.files[0]){t.files[0].text().then(x=>{$('#bt').value=x});return}
+if(D.a=='dt'){S.dt[D.k]=t.value;S.pd=1;save();render()}else if(D.a=='pd'){S.plan[D.i].d=t.checked?1:0;save();render()}else if(D.a=='mf'){S.mk[D.i].f=t.checked?1:0;save();render()}
+else if(t.id=='ms')fillT();else if(t.id=='hr'){S.hrs=Math.max(1,+t.value||3);S.pd=1;save()}else if(t.id=='rs'){S.rest=+t.value;S.pd=1;save()}
+else if(t.id=='fm'){S.F=Math.max(1,+t.value||25);if(!P.run&&P.mode=='f')P.left=S.F*60;save()}else if(t.id=='bm'){S.B=Math.max(1,+t.value||5);save()}});
+migrate();applyTheme();if(!S.pick)ob=newOb();regSW();render();
+</script></body></html>
